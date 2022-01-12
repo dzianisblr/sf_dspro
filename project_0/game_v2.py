@@ -12,8 +12,7 @@ def random_predict(number: int=1)->int:
         if number == np.random.randint(1,101):
 
             break
-    return count
-#_list = random_predict()
+    return count # ,number - для _list
 #print(f'Число {_list[1]} угадано, попыток - {_list[0]}')
 
 def score_game(random_predict) -> int:

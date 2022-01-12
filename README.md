@@ -3,4 +3,4 @@ SF homework
 From the [SkillFactory Data Science course](https://skillfactory.ru/data-scientist).
 
 # Units:
-*[Project 0: Game: Find the Number](https://github.com/dzianisblr/sf_dspro/blob/IDE/game_v2.py)
+*[Project 0: Game: Find the Number](https://github.com/dzianisblr/sf_dspro/blob/IDE/project_0)
