@@ -1,17 +1,17 @@
 # Проект 0: Игра "Угадай число"
 
 ## Оглавление
-[1. Описание проекта](https://github.com/dzianisblr/sf_dspro/blob/IDE/project_0/README.MD#Описание-проекта)
-[2. Какой кейс решаем?](https://github.com/dzianisblr/sf_dspro/blob/IDE/project_0/README.MD#Какой-кейс-решаем)
-[3. Краткая информация о данных](https://github.com/dzianisblr/sf_dspro/blob/IDE/project_0/README.MD#Краткая-информация-о-данных)
-[4. Этапы работы над проектом](https://github.com/dzianisblr/sf_dspro/blob/IDE/project_0/README.MD#Этапы-работы-над-проектом)
-[5. Результаты](https://github.com/dzianisblr/sf_dspro/blob/IDE/project_0/README.MD#Результаты)
-[6. Выводы](https://github.com/dzianisblr/sf_dspro/blob/IDE/project_0/README.MD#Выводы)
+[1. Описание проекта](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/README.MD#Описание-проекта)
+[2. Какой кейс решаем?](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/README.MD#Какой-кейс-решаем)
+[3. Краткая информация о данных](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/README.MD#Краткая-информация-о-данных)
+[4. Этапы работы над проектом](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/README.MD#Этапы-работы-над-проектом)
+[5. Результаты](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/README.MD#Результаты)
+[6. Выводы](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/README.MD#Выводы)
 
 ### Описание проекта
 Угадать загаданное компьютером число за минимальное количество попыток
 
-:arrow-up:[к оглавлению](https://github.com/dzianisblr/sf_dspro/blob/IDE/project_0/README.MD#Оглавление)
+:arrow-up:[к оглавлению](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/README.MD#Оглавление)
 
 ### Какой кейс решаем
 Требуется написать программу, которая угадывает число за минимальное количество попыток
@@ -24,8 +24,8 @@
 Загаданное число генерируется компьютером при помощи встроенного в NumPy генератора случайных чисел
 
 ### Этапы работы над проектом
-- [game.py](https://github.com/dzianisblr/sf_dspro/blob/IDE/project_0/game.py) - первая версия программы. Компьютер "загадывает" число, пользователь отгадывает. После каждой попытки пользователь получает информацию больше или меньше загаданноечисло, чем предложенное им.
-- [game_v2.py](https://github.com/dzianisblr/sf_dspro/blob/IDE/project_0/game_v2.py) - вторая версия. Содержит две функции: *score_game* формирует массив из 1000 рандомных чисел и при помощи функции *random_predict* угадывает каждое загаданное число, сохраняя вновый массив количество попыток. В конце вычисляется среднее количество попыток до угадывания числа. Информация больше-меньше не учитывается
+- [game.py](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/game.py) - первая версия программы. Компьютер "загадывает" число, пользователь отгадывает. После каждой попытки пользователь получает информацию больше или меньше загаданноечисло, чем предложенное им.
+- [game_v2.py](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/game_v2.py) - вторая версия. Содержит две функции: *score_game* формирует массив из 1000 рандомных чисел и при помощи функции *random_predict* угадывает каждое загаданное число, сохраняя вновый массив количество попыток. В конце вычисляется среднее количество попыток до угадывания числа. Информация больше-меньше не учитывается
 
 ### Результаты
 - *Версия 1*: стабильно работающая примитивная игра для пользователя.
