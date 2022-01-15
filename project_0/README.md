@@ -1,17 +1,15 @@
 # Проект 0: Игра "Угадай число"
 
 ## Оглавление
-[1. Описание проекта](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/README.MD###Описание-проекта)    
-[2. Какой кейс решаем?](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/README.MD###Какой-кейс-решаем) 
-[3. Краткая информация о данных](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/README.MD###Краткая-информация-о-данных)  
-[4. Этапы работы над проектом](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/README.MD###Этапы-работы-над-проектом)  
-[5. Результаты](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/README.MD###Результаты)    
-[6. Выводы](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/README.MD###Выводы)    
+[1. Описание проекта](#Описание-проекта)    
+[2. Какой кейс решаем?](#Какой-кейс-решаем) 
+[3. Краткая информация о данных](#Краткая-информация-о-данных)  
+[4. Этапы работы над проектом](#Этапы-работы-над-проектом)  
+[5. Результаты](#Результаты)    
+[6. Выводы](#Выводы)    
 
 ### Описание проекта
 Угадать загаданное компьютером число за минимальное количество попыток
-
-:arrow-up:[к оглавлению](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/README.MD##Оглавление)
 
 ### Какой кейс решаем
 Требуется написать программу, которая угадывает число за минимальное количество попыток
@@ -36,3 +34,7 @@
 ### Выводы
 - *random такой random*
 - программу можно довольно просто доработать до большего интервала рандомности загадываемого числа (интервал может задавать пользователь, вызывающая функция)
+
+[к оглавлению](##Оглавление)
+
+![umbre11a corp](https://github.com/dzianisblr/sf_dspro/blob/main/project_0/umbrella.png)
