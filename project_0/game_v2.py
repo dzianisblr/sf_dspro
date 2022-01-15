@@ -1,7 +1,5 @@
 import numpy as np
 
-#if __name__ == '__main__':
-    
 def random_predict(number: int=1)->int:
     
     count = 0
@@ -12,8 +10,7 @@ def random_predict(number: int=1)->int:
         if number == np.random.randint(1,101):
 
             break
-    return count # ,number - для _list
-#print(f'Число {_list[1]} угадано, попыток - {_list[0]}')
+    return count
 
 def score_game(random_predict) -> int:
     """За какое количество попыток в среднем за 1000 подходов угадывает наш алгоритм
