@@ -1,25 +1,48 @@
-import numpy as np
+from collections import Counter, OrderedDict
+from block_1.python_9.hidden import north, center, south
 
- 
-def random_predict(number: int=1)->int: # функция угадывания
 
-    count = 0
-    max_num = 100
-    min_num = 1
+def shop_sells(shop):
+    
+    products_list = []
+    
+    for each in shop:
+        products_list.extend(each)
+    
+    return products_list
 
-    while True:
-        count += 1
-        finding_num = (max_num + min_num) // 2 # медиана для уменьшения вариантов в 2 раза
+
+shopsale_dict = {'north': shop_sells(north),\
+                'center': shop_sells(center),\
+                'south': shop_sells(south)
+                }
+
+max_sales_shop_name = ''
+max_sales = 0
+
+for each in shopsale_dict:
+    sales = Counter(shopsale_dict[each])
+    #print(each, ':', sales, ' - all ', sum(sales.values()))
+    
+    if sum(sales.values()) > max_sales:
+        max_sales = sum(sales.values())
+        max_sales_shop_name = each
         
-        if number == finding_num: # пробуем угадать
-            break
-        elif number > finding_num: # если загаданное больше
-            min_num = finding_num # следующим проходом начнем поиск от предположенного в большую сторону
-        else:
-            max_num = finding_num # иначе, в меньшую
-    
-    print(f'Find! {finding_num}')
-    
-    return count
 
-print(random_predict(99))
+print('Unit 9.4.4 - ', max_sales_shop_name, ' : ', max_sales)
+
+north_notpopular_sale = Counter(shopsale_dict['north']).most_common()
+print('Unit 9.4.5 - ', north_notpopular_sale[-1][0], ' : ', north_notpopular_sale[-1][1])
+
+sales_lst = ['Bread', 'Yoghurt', 'Beer', 'Cola']
+search_sale = ''
+sales_center = Counter(shopsale_dict['center'])
+sales_north = Counter(shopsale_dict['north'])
+sales_center.subtract(sales_north)
+
+for each in sales_lst:
+    if sales_center[each] > 0:
+        search_sale = each
+        break
+    
+print(f'Unit 9.4.6 - In center most sales: {search_sale} - {sales_center[search_sale]}')
