@@ -75,4 +75,41 @@ print(f'Unit 9.4.6 - In center most sales: {search_sale} - {sales_center[search_
 
 """    Задача 4.7    """ 
 
+""" Должно быть решение проще, элегантней, универсальней - 
+    а если б магазинов было больше? Например 50?        """
+    
+sales_center_and_north = Counter(shopsale_dict['center'])\
+                        + Counter(shopsale_dict['north'])
+sales_center_and_south = Counter(shopsale_dict['center'])\
+                        + Counter(shopsale_dict['south'])
+sales_south_and_north = Counter(shopsale_dict['south'])\
+                        + Counter(shopsale_dict['north'])
+sales_center = Counter(shopsale_dict['center'])
+sales_south = Counter(shopsale_dict['south'])
+most_popular_shop = ''
 
+sales_center.subtract(sales_south_and_north)
+sales_north.subtract(sales_center_and_south)
+sales_south.subtract(sales_center_and_north)
+
+if sales_center.most_common(1)[0][1] > 0:
+    most_popular_shop = 'center'
+elif sales_north.most_common(1)[0][1] > 0:
+    most_popular_shop = 'north'
+elif sales_south.most_common(1)[0][1] > 0:
+    most_popular_shop = 'south'
+else:
+    most_popular_shop = 'That shop is not found'
+    
+print(f'Unit 9.4.7. - {most_popular_shop}')
+
+
+"""    Задача 4.8    """ 
+
+all_sales = Counter(shopsale_dict['center'])\
+            + Counter(shopsale_dict['north'])\
+            + Counter(shopsale_dict['south'])
+
+most_popular_sale = all_sales.most_common()
+
+print(f'Unit 9.4.8 - {most_popular_sale[1][0]} : {most_popular_sale[1][1]}')
