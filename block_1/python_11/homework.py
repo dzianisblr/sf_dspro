@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 
+"""
 ufo_db = pd.read_csv('https://raw.githubusercontent.com/justmarkham/pandas-videos/master/data/ufo.csv')
 #print(ufo_db.head(10))
 #print(ufo_db.info())
@@ -15,4 +16,8 @@ ufo_nevada['Date'] = ufo_nevada['Time'].dt.date
 days_between = ufo_nevada['Date'].diff().dt.days
 print(days_between)
 print(days_between.mean())
+"""
+bike_db = pd.read_csv('data/citibike-tripdata.csv')
+print(bike_db.info)
+
 
