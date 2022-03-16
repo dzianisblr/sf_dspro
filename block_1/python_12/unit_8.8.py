@@ -11,13 +11,13 @@ orders_products = orders.join(
 )
 
 #print(orders_products.tail(3))
-#print(orders_products[orders_products['Name']==NaN].loc[:, 'Order ID'])
+print(orders_products[orders_products['Name'].isnull()].loc[:, 'Order ID'])
 #print(orders_products[orders_products['Отменен']=='Да'].loc[:, 'Name'])
 
 orders_products['Прибыль'] = orders_products['Количество']\
     * orders_products['Price']
 bestbyer = orders_products[orders_products['Оплачен']=='Да']\
     .groupby('ID Покупателя')['Прибыль'].sum()
-print(bestbyer)
+#print(bestbyer)
 
 #print(products.head())
