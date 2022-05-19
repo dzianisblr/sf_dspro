@@ -1,0 +1,56 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E5E5E5;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1280px;
+    margin: 20px;
+    background: #fff;
+}
+
+.about-me-profession{
+    font-size: 14px;
+    font-weight: 700;
+}
+.about-me-block{
+    margin-top: 70px;
+    margin-left: 40px;
+    width: 400px;
+    height: 180px;
+    font-size: 14px;
+}
+
+.projects-block{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.experience-block{
+    margin-top: 50px;
+    margin-left: 40px;
+    padding-right: 40px;
+}
+.education-block{
+    width: 800px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+
+.left-box{
+    background-color: #1E2939;
+    padding-top: 40px;
+}
+
+.contact-section{
+    margin-top: 40px;
+    margin-left: 60px;
+    color: #fff;
+}
+.tech_skills-section,
+.soft-scills-section{
+    margin-left: 60px;
+    color: #fff;
+}
