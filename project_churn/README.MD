@@ -35,7 +35,7 @@
 10. Переведите числовой признак CreditScore в категориальный. Для этого воспользуйтесь функцией get_credit_score_cat(), которая приведена ниже. Примените её к столбцу CreditScore и создайте новый признак CreditScoreCat — категории кредитного рейтинга.
 
 ### Результаты
-Результаты сведены в Jupiter Notebook [churn_book.ipynb](https://github.com/dzianisblr/sf_dspro/blob/main/block_1/python_13/project_churn/churn_book.ipynb)
+Результаты сведены в Jupiter Notebook [churn_book.ipynb](https://github.com/dzianisblr/sf_dspro/blob/main/project_churn/churn_book.ipynb)
 
 
 [к оглавлению](#Оглавление)
